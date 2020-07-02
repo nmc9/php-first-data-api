@@ -1,5 +1,5 @@
 {
-    "name": "vinceg/firstdataapi",
+    "name": "nmc9/fd-helper",
     "type": "library",
     "description": "First Data Api",
     "keywords": [],
@@ -13,17 +13,21 @@
         {
             "name": "Vincent Gabriel",
             "homepage": "http://vadimg.com/"
+        },
+        {
+            "name": "Nicholas Caruso",
+            "email": "nickcdtc@gmail.com"
         }
     ],
     "require": {
-        "php": ">=5.3.3",
+        "php": ">=7.0",
         "ext-curl": "*"
     },
     "autoload": {
         "psr-0": {
-            "VinceG\\FirstDataApi\\": "VinceG/FirstDataApi/src"
+            "Nmc9\\FirstDataApi\\": "Nmc9/FirstDataApi/src"
         }
     },
-    "target-dir": "VinceG/FirstDataApi",
+    "target-dir": "Nmc9/FirstDataApi",
     "minimum-stability": "dev"
 }

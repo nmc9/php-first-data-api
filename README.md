@@ -1,6 +1,8 @@
 First Data Global Gateway PHP API Service
 ==================
 
+This is a fork of the package by Vincent Gabriel. That package has been untouched for 5 years at the time of this fork. It was forked so that any changes to the package can be immediatly implemented and to also make the integration with other payment processesors more uniform.
+
 <a href='https://twitter.com/gabrielva' target='_blank'>Follow @gabrielva</a>
 
 This component provides a PHP Wrapper to post api calls to the First Data payment processor.
@@ -9,7 +11,7 @@ It requires curl and the php curl extension.
 
 ## Features:
 * Supports all transaction types.
-* Supports Transarmor Token for charging credit cards more than once without storing the actual card number. 
+* Supports Transarmor Token for charging credit cards more than once without storing the actual card number.
 
 ## Installation
 This library is now installable using <a href='http://getcomposer.org'>Composer</a>
@@ -18,7 +20,7 @@ Add this to your project composer.json:
 
 ```
 	"require": {
-        "vinceg/firstdataapi": "dev-master"
+        "nmc9/fd-helper": "dev-master"
 	},
 ```
 
@@ -26,18 +28,18 @@ To use the component:
 
 ```php
 <?php
-use VinceG\FirstDataApi\FirstData;
+use Nmc9\FirstDataApi\FirstData;
 
 //
-// 3rd Parameter sets debug mode on.  
-// In debug mode, the demo gateway is used.  
+// 3rd Parameter sets debug mode on.
+// In debug mode, the demo gateway is used.
 // You will need to create a demo gateway account with First Data
-// 
+//
 $firstData = new FirstData(API_LOGIN, API_KEY, true);
 
 ```
 
-## Documentation and Examples 
+## Documentation and Examples
 ### First Data Documentation:
 <a href='https://firstdata.zendesk.com/entries/407571-First-Data-Global-Gateway-e4-Web-Service-API-Reference-Guide'>Api Reference Guide</a>
 
